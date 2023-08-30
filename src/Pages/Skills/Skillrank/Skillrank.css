@@ -1,0 +1,90 @@
+.Skillrank{
+    margin-left: 27rem;
+    color: #d8d8d8;
+    border-left: 3px solid #ff0000e9;
+    border-radius: 3px;
+    padding-left: 10px;
+    top: 0;
+    position: absolute;
+    margin-top: 7rem;
+    width: 60%;
+}
+.skill-rank-cont h2 span{
+    color: #ff0000e9;
+}
+
+.skill-rank-icon{
+    transform: rotate(-90deg);
+    color: #d8d8d8;
+    text-decoration: none;
+    background: transparent;
+}
+
+.skill-link{
+    color: #d8d8d8;
+    text-decoration: none;
+}
+.skill-rank-item{
+    width: 70%;
+    margin-top: .5rem;
+    background: transparent;
+}
+
+.skill-rank-item span{
+    background: transparent;
+}
+
+.skills-bar {
+    background-color: orange;
+    height: .5rem;
+    border-radius: .5rem;
+    width: 85%;
+    margin-top: .6rem;
+  }
+
+  .skills-bar-1 {
+    background-color: orange;
+    height: .5rem;
+    border-radius: .5rem;
+    width: 92%;
+    margin-top: .6rem;
+  }
+
+  .skills-bar-2 {
+    background-color: orange;
+    height: .5rem;
+    border-radius: .5rem;
+    width: 70%;
+    margin-top: .6rem;
+  }
+
+  .skills-bar-3 {
+    background-color: orange;
+    height: .5rem;
+    border-radius: .5rem;
+    width: 99%;
+    margin-top: .6rem;
+  }
+
+  .skills-bar-4 {
+    background-color: orange;
+    height: .5rem;
+    border-radius: .5rem;
+    width: 67%;
+    margin-top: .6rem;
+  }
+  .skills-bar-5 {
+    background-color: orange;
+    height: .5rem;
+    border-radius: .5rem;
+    width: 39%;
+    margin-top: .6rem;
+  }
+  .skills-bar-6 {
+    background-color: orange;
+    height: .5rem;
+    border-radius: .5rem;
+    width: 40%;
+    margin-top: .6rem;
+  }
+

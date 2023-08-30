@@ -1,0 +1,125 @@
+.skill-set{
+    border-radius: 3px;
+    padding-left: 10px;
+    margin-left: 24rem;
+    width: 50%;
+}
+
+.skill-set h1{
+    color: #e8e8e8;
+    font-family: Arial, Helvetica, sans-serif;
+    font-stretch: expanded;
+    width: 16%;
+    border-radius: 2px;
+}
+
+.skill-set h1 span{
+    color: #ff0000e9;
+}
+.skill-set em{
+    color: #a6a6a6e9;
+}
+.Skill-header{
+    width: 70%;
+    justify-content: space-between;
+    display: flex;
+}
+
+.click{
+    color: #d8d8d8;
+    border-bottom: 3px solid #ff0000e9;
+    padding-bottom: 5px;
+    border-radius: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.click:hover{
+    border-bottom: 3px solid orange;
+}
+
+.next-page {
+    transform: rotate(90deg);
+}
+
+.skill-front{
+    color: #d8d8d8;
+    margin-top: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-stretch: extra-condensed;
+
+}
+.skill-front span{
+    color: #d8d8d8;
+    display: inline;
+
+
+    
+}
+
+
+.skill-icons{
+    color: #d8d8d8;
+    height: 20px;
+    width: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-icons:hover{
+    color: #ff0000e9;
+}
+
+.exp-front{
+    color: #d8d8d8;
+    margin-top: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-stretch: extra-condensed;
+}
+
+.ac{
+    color: #d8d8d8;
+    margin-top: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-stretch: extra-condensed;
+}
+
+.pg{
+    color: #d8d8d8;
+    margin-top: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-stretch: extra-condensed;
+}
+
+.pg-data{
+    width: 70%;
+}
+
+
+
+.skill-big-icon-log{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 350px;
+    width: 350px;
+    background: transparent;
+    margin-top: 15rem;
+    margin-right: 3rem;
+    color: orange;
+    animation: animate 2s infinite ease alternate;
+
+
+}
+
+@keyframes animate {
+    100%{
+        transform: translateY(20px);
+    }
+    
+}
+
+.next-page{
+    color: #d8d8d8;
+}

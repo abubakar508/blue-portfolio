@@ -1,0 +1,275 @@
+:root {
+  font-size: 16px;
+  font-family: "Open Sans";
+  --text-primary: white;
+  --text-secondary: #ececec;
+  --bg-primary: rgb(214, 194, 14);
+  --bg-secondary: rgb(33, 32, 32);
+  --transition-speed: 500ms;
+}
+
+.navdiv {
+  position: absolute;
+  display: flex;
+  border-radius: 40px;
+  flex-direction: column;
+  width: 10vh;
+  max-width: 20vh;
+  height: 300px;
+  padding: 12px 20px;
+}
+.navdiv img {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  background: transparent;
+  left: 0;
+}
+
+.navbar {
+  z-index: 1;
+  background: transparent;
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  border-radius: 40px;
+}
+
+.icons {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  border-radius: 40px;
+  background: transparent;
+}
+.nav-icon {
+  width: 40px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: whitesmoke;
+  background: transparent;
+}
+.nav-icon-l {
+  background: transparent;
+}
+
+.nav-icon:hover {
+  color: orange;
+}
+
+.nav-icon-t {
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  width: 40px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: whitesmoke;
+  background: transparent;
+}
+
+.nav-icon-t:hover {
+  color: orange;
+}
+
+.nav-icon-b {
+  width: 40px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  color: whitesmoke;
+  background: transparent;
+}
+
+.nav-icon-b:hover {
+  color: orange;
+}
+
+/*
+.navbar {
+  background-color: var(--bg-primary);
+  width: 17vh;
+  transition: width 400ms ease;
+}
+
+.navbar-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.nav-item {
+  width: 100%;
+}
+
+.nav-item:last-child {
+  margin-top: auto;
+}
+
+.navbar:hover {
+  width: 10rem;
+}
+.nav-link {
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  color: var(--text-primary);
+  text-decoration: none;
+  filter: grayscale(100%) opacity(0.7);
+  transition: var(--transition-speed);
+}
+
+.nav-link:hover {
+  filter: grayscale(0%) opacity(1);
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+}
+
+.link-text {
+  display: none;
+  margin-left: 1rem;
+}
+
+.nav-link svg {
+  width: 2rem;
+  min-width: 2rem;
+  margin: 0 1.5rem;
+}
+
+.fa-primary {
+  color: #ff7eee;
+}
+
+.fa-secondary {
+  color: #df49a6;
+}
+
+.fa-primary,
+.fa-secondary {
+  transition: var(--transition-speed);
+}
+.logo {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: var(--text-secondary);
+  background: var(--bg-secondary);
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3ch;
+  width: 100%;
+}
+
+.logo svg {
+  transform: rotate(0deg);
+  transition: var(--transition-speed);
+}
+
+.logo-text {
+  font-size: 15px;
+  display: inline;
+  position: absolute;
+  left: -999px;
+  transition: var(--transition-speed);
+}
+* A Morpheous chaincode* .navbar:hover .logo svg {
+  transform: rotate(-180deg);
+}
+@media only screen and (max-width: 600px) {
+  .navbar {
+    bottom: 0;
+    width: 100vw;
+    height: 5rem;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .navbar-nav {
+    flex-direction: row;
+  }
+
+  .nav-link {
+    justify-content: center;
+  }
+
+  main {
+    margin: 0;
+  }
+}
+
+/* Large screens */
+/*
+@media only screen and (min-width: 600px) {
+  .navbar {
+    top: 0;
+    width: 5rem;
+    height: 100vh;
+  }
+
+  .navbar:hover .link-text {
+    display: inline;
+  }
+
+  .navbar:hover .logo svg {
+    margin-left: 11rem;
+  }
+
+  .navbar:hover .logo-text {
+    left: 0px;
+  }
+}
+.container {
+  display: grid;
+  background-color: rgba(6, 6, 136, 0.533);
+  text-align: center;
+  border: solid 3px black;
+  height: 90%;
+  width: 100%;
+}
+.content {
+  align-self: center;
+  background-color: purple;
+  border: solid 3px black;
+  height: 50vh;
+}
+.container_2 {
+  display: grid;
+  background-color: black;
+  text-align: center;
+  border: solid 5px white;
+  height: cover;
+}
+h1 {
+  color: white;
+  text-align: center;
+}
+.animated-grid {
+  height: 85vh;
+  display: grid;
+  gap: 1rem;
+  grid-template-rows: repeat(4, 25%);
+  grid-template-columns: 240px auto auto 240px;
+  text-align: center;
+}
+.card {
+  color: purple;
+  background-position: center;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  height: 100%;
+  width: 100%;
+  border-radius: 4px;
+  overflow: hidden;
+}
+*/
