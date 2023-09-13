@@ -5,6 +5,7 @@ import {
   SiPrivateinternetaccess,
   SiCkeditor4,
 } from "react-icons/si";
+import {GiBlackHandShield} from "react-icons/gi"
 import { RiBuilding2Fill } from "react-icons/ri";
 import { LuPhoneCall } from "react-icons/lu";
 import { Link } from "react-router-dom";
@@ -30,7 +31,7 @@ export const Navbar = () => {
               <MdManageAccounts className="nav-icon-b" title="Services" />
             </Link>
             <Link to="/Clients" className="nav-icon-l">
-              <RiBuilding2Fill className="nav-icon" title="Projects" />
+              <GiBlackHandShield className="nav-icon" title="Client Testimonials" />
             </Link>
             <Link to="/Contact" className="nav-icon-l">
               <LuPhoneCall className="nav-icon-b" title="Contact" />

@@ -1,13 +1,29 @@
-.Skillrank{
-    margin-left: 27rem;
-    color: #d8d8d8;
-    border-left: 3px solid #ff0000e9;
-    border-radius: 3px;
-    padding-left: 10px;
-    top: 0;
+@media (max-width: 768px) {
+  .skill-rank-cont{
     position: absolute;
-    margin-top: 7rem;
-    width: 60%;
+    width: 70%;
+    margin-top: 10rem;
+    top: 230px;
+    
+  }
+  .skillrank{
+    display: flex;
+  }
+}
+.Skillrank{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.rank-title{
+  color: #d8d8d8;
+  margin-top: 1rem;
+}
+.skill-rank-cont{
+  margin: 5px;  
+  border-left: 3px solid #ff0000e9;
+  padding-left: 10px;
 }
 .skill-rank-cont h2 span{
     color: #ff0000e9;
@@ -15,23 +31,24 @@
 
 .skill-rank-icon{
     transform: rotate(-90deg);
-    color: #d8d8d8;
+    color: orange;
     text-decoration: none;
     background: transparent;
 }
 
 .skill-link{
-    color: #d8d8d8;
+    color: orange;
     text-decoration: none;
 }
 .skill-rank-item{
-    width: 70%;
+    width: 100%;
     margin-top: .5rem;
     background: transparent;
 }
 
 .skill-rank-item span{
     background: transparent;
+    color: #d8d8d8;
 }
 
 .skills-bar {
@@ -70,7 +87,7 @@
     background-color: orange;
     height: .5rem;
     border-radius: .5rem;
-    width: 67%;
+    width: 50%;
     margin-top: .6rem;
   }
   .skills-bar-5 {

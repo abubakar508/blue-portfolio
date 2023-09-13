@@ -1,8 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@media (max-width: 768px) {
+    .about{
+        position: absolute;
+        left: 0;
+        background: transparent;
+        margin-left: 3rem;
+        display: block;
+        height: 600px;
+        
+    }
+    .about-content{
+        z-index: 3000;
+        height: 350px;
+        margin: 5px;
+
+    }
+    .about-icon{
+        position: absolute;
+        width: 100%;
+        height: 270px;
+        margin-bottom: 15rem;
+        bottom: 0;
+        right: 0;
+        z-index: 3000;
+    }
+
+}
 .about{
-    margin-left: 24rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background: transparent;
+    
+}
+.empty-div{
+    background: transparent;
+
+
+}
+.about-content{
     border-left: 3px solid #ff0000e9;
-    border-radius: 2px;
-    padding-left: 10px;
+    background: transparent;
 }
 
 .title{
@@ -11,53 +48,97 @@
     width: fit-content;
     padding-right: 10px;
     font-family: Arial, Helvetica, sans-serif;
+    font-family: Poppins;
+    margin: 5px;
 }
 .title span{
     color: #ff0000e9;
+    font-family: Poppins;
 }
-
+.about-header{
+    background: transparent;
+    margin: 5px;
+}
 
 .about-header h2{
     color: #d8d8d8;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Poppins;
     font-size: 30px;
-    width: 50%;
+    width: 100%;
+    background: transparent;
+    margin: 5px;
+
 }
 .about-header h2 span{
     color: #ff0000e9;
+    font-family: Poppins;
+    background: transparent;
 }
 
 .small-1{
-    width: 50%;
+    width: 100%;
+    background: transparent;
+    margin: 5px;
 }
 .small-1 small{
     color: #d8d8d8;
     font-stretch:extra-expanded;
+    font-family: Poppins;
+    background: transparent;
+    
 }
 
 
 .exp{
-    display: flex;
-    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+    width: 100%;
+    background: transparent;
+    margin-top: 1rem;
 }
+.exp-section{
+    border: 1px solid orange;
+    background: transparent;
+    margin: 5px;
 
+}
 .exp-section h1{
     font-size: 30px;
-    width: 80%;
     color: #ff0000e9;
+    font-family: Poppins;
+    background: transparent;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 
+}
+.add-text-abt{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    margin: 2px;
 }
 .add-text-abt small{
     text-transform: uppercase;
     font-size: 10px;
     font-weight: bold;
     color: #d8d8d8;
-}
-.add-text-abt{
-    width: 80%;
+    font-family: Poppins;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background: transparent;
 }
 
-.skill-icon{
+.about-icon{
+    background: transparent;
+}
+
+.skill-a-icon{
     height: 300px;
     width: 300px;
     position: absolute;
@@ -65,6 +146,6 @@
     top: 0;
     margin-top: 15rem;
     margin-right: 3rem;
-    color: #f3f3f3;
+    color: color-mix(in srgb, yellow 40%, blue 70%);
     background: transparent;
 }

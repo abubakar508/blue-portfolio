@@ -72,6 +72,7 @@ export const Services = () => {
   return (
     <div>
       <div className="services">
+        <div className="empty-serv-div"></div>
         <div className="services-header">
           <h1>
             My Services<span>.</span>

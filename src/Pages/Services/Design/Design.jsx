@@ -8,6 +8,7 @@ export const Design = () => {
   const modal = () => {
     setShowModal(true);
   };
+ 
   const noModal = () => {
     setShowModal(false);
   };
@@ -92,7 +93,7 @@ export const Design = () => {
             <img src={require("../../../Assets/UIC.png")} alt="" />
           </div>
           <div className="design-image" onClick={modal6}>
-            <img src={require("../../../Assets/UDGF.png")} alt="" />
+            <img src={require("../../../Assets/GPS.png")} alt="" />
           </div>
           <div className="design-image" onClick={modal7}>
             <img src={require("../../../Assets/NK.png")} alt="" />
@@ -156,7 +157,7 @@ export const Design = () => {
           <div className="design-modal">
             <div className="image-modal">
               <button onClick={noModal6}>X Close</button>
-              <img src={require("../../../Assets/UDGF.png")} alt="" />
+              <img src={require("../../../Assets/GPS.png")} alt="" />
             </div>
           </div>
         )}

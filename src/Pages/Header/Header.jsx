@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Header.css";
 import { SiFacebook } from "react-icons/si";
-import { SiGithub, SiGmail } from "react-icons/si";
+import { SiGithub,  } from "react-icons/si";
 import { FaGooglePlus } from "react-icons/fa";
 import {
   SiInstagram,
@@ -12,15 +12,6 @@ import {
 import { Link } from "react-router-dom";
 
 export const Header = () => {
-  const [hovered, setHovered] = useState(false);
-
-  const handleMouseEnter = () => {
-    setHovered(true);
-  };
-
-  const handleMouseLeave = () => {
-    setHovered(false);
-  };
 
   return (
     <div>
@@ -28,7 +19,7 @@ export const Header = () => {
         <img src={require("../../Assets/HeaderLeft.png")} alt="" />
         <div className="portfolio-name">
           <h2>
-            Abisma{" "}
+            Abu-Bakr{" "}
             <small className="small">
               Ismail
               <em>
@@ -42,21 +33,8 @@ export const Header = () => {
           <FaGooglePlus
             className="header-icon"
             title="Mail"
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
           />
-          {hovered && (
-            <div
-              className="dropdown-content"
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
-            >
-              <div className="dc-1"><Link><SiGmail/>abubakarismail508@gmail.com</Link></div>
-              <dic className="dc-1"><Link><SiGmail/>imabubakar508@gmail.com</Link></dic>
-              <div className="dc-1"><Link><SiGmail/>abubakarabisma@gmail.com</Link></div>
-            </div>
-          )}
-          <SiFacebook className="header-icon" title="Facebook" />
+          <Link to="https://www.google.com" target="_blank" rel="noopener noreferrer" ><SiFacebook className="header-icon" title="Facebook" /></Link>
           <SiGithub className="header-icon" title="Github" />
           <SiInstagram className="header-icon" title="Instagram" />
           <SiTwitter className="header-icon" title="Twitter(X)" />

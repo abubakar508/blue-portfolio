@@ -10,13 +10,36 @@
 
 .navdiv {
   position: absolute;
+  position: fixed;
   display: flex;
   border-radius: 40px;
   flex-direction: column;
-  width: 10vh;
-  max-width: 20vh;
   height: 300px;
   padding: 12px 20px;
+  z-index: 3;
+  background: transparent;
+}
+@media (max-width: 768px) {
+  .navdiv{
+    position: fixed;
+    z-index: 5000;
+    background: transparent;
+  }
+  .navdiv img {
+    position: absolute;
+    background: transparent;
+    visibility: hidden;
+  }
+  .navbar {
+    z-index: 1;
+    background: transparent;
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    border-radius: 40px;
+    width: 2rem;
+    position: fixed;
+  }
+
 }
 .navdiv img {
   width: 400px;
@@ -24,6 +47,7 @@
   position: absolute;
   background: transparent;
   left: 0;
+  z-index: 1;
 }
 
 .navbar {
@@ -32,6 +56,7 @@
   backdrop-filter: blur(30px);
   -webkit-backdrop-filter: blur(30px);
   border-radius: 40px;
+   position: fixed;
 }
 
 .icons {

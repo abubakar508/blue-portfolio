@@ -66,18 +66,27 @@ export const Skills = () => {
   };
   return (
     <div>
-      <div className="skill-set">
+      <div className="skill-act">
+        <div className="empty-dix">
+
+
+        </div>
+        <div className="skill-set">
+          <section className="em">
         <em>
           In this page, to view a section, hover on the section and leave the
           cursor on it.
         </em>
+        </section>
         <h1>
           Skills<span>.</span>
         </h1>
-        <div className="Skill-header">
+        <div className="skill-grid">
+
           <div onMouseEnter={click} onMouseLeave={notClick} className="click">
             <small>Skills</small>
           </div>
+          
           <div className="click" onMouseEnter={click1} onMouseLeave={notClick1}>
             <small>Academia</small>
           </div>
@@ -89,6 +98,7 @@ export const Skills = () => {
           </div>
           <div ><Link to="/Skillrank"><GrArchlinux className="next-page" title="Next Page"/></Link></div>
         </div>
+
         {clicked && (
           <div className="skill-details">
             <div className="skill-front">
@@ -176,8 +186,10 @@ export const Skills = () => {
             </div>
           </div>
         )}
-
+        </div>
+          <div className="skill-icon">
         <GiStrongMan className="skill-big-icon-log" />
+        </div>
       </div>
     </div>
   );
